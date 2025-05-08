@@ -49,22 +49,24 @@
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.4" />
-<meta property="og:title" content="MATLAB" />
+<meta property="og:title" content="关于捷变频雷达相参积累的思考" />
+<meta name="author" content="Xinyu Huang" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="Test" />
-<meta property="og:description" content="Test" />
-<link rel="canonical" href="https://huang-cumt.github.io/tags/matlab/" />
-<meta property="og:url" content="https://huang-cumt.github.io/tags/matlab/" />
+<meta name="description" content="考虑捷变频雷达发射脉冲串载频随机变化，我们可以增强雷达的抗截获能力，同时可以合成大宽带波形从而实现距离分辨率的提升。" />
+<meta property="og:description" content="考虑捷变频雷达发射脉冲串载频随机变化，我们可以增强雷达的抗截获能力，同时可以合成大宽带波形从而实现距离分辨率的提升。" />
+<link rel="canonical" href="https://huang-cumt.github.io/posts/%E6%8D%B7%E5%8F%98%E9%A2%91%E7%9B%B8%E5%8F%82%E6%80%9D%E8%80%83/" />
+<meta property="og:url" content="https://huang-cumt.github.io/posts/%E6%8D%B7%E5%8F%98%E9%A2%91%E7%9B%B8%E5%8F%82%E6%80%9D%E8%80%83/" />
 <meta property="og:site_name" content="Fish" />
-<meta property="og:type" content="website" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-04-10T19:09:43+08:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="MATLAB" />
+<meta property="twitter:title" content="关于捷变频雷达相参积累的思考" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"Test","headline":"MATLAB","url":"https://huang-cumt.github.io/tags/matlab/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Xinyu Huang","url":"https://github.com/huang-cumt/"},"dateModified":"2025-04-10T19:09:43+08:00","datePublished":"2025-04-10T19:09:43+08:00","description":"考虑捷变频雷达发射脉冲串载频随机变化，我们可以增强雷达的抗截获能力，同时可以合成大宽带波形从而实现距离分辨率的提升。","headline":"关于捷变频雷达相参积累的思考","mainEntityOfPage":{"@type":"WebPage","@id":"https://huang-cumt.github.io/posts/%E6%8D%B7%E5%8F%98%E9%A2%91%E7%9B%B8%E5%8F%82%E6%80%9D%E8%80%83/"},"url":"https://huang-cumt.github.io/posts/%E6%8D%B7%E5%8F%98%E9%A2%91%E7%9B%B8%E5%8F%82%E6%80%9D%E8%80%83/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title>MATLAB | Fish
+  <title>关于捷变频雷达相参积累的思考 | Fish
   </title>
 
   <!--
@@ -133,9 +135,16 @@
   <!-- 3rd-party Dependencies -->
 
   
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.27.20/dist/tocbot.min.css">
   
 
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.min.css">
+  
+
+  
+    <!-- Image Popup -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox@3.3.0/dist/css/glightbox.min.css">
   
 
   <!-- JavaScript -->
@@ -426,14 +435,10 @@
           
         
           
-            <span>
-              <a href="/tags/">Tags</a>
-            </span>
-          
         
           
             
-              <span>MATLAB</span>
+              <span>关于捷变频雷达相参积累的思考</span>
             
 
           
@@ -447,7 +452,7 @@
     </button>
 
     <div id="topbar-title">
-      Tag
+      Post
     </div>
 
     <button type="button" id="search-trigger" class="btn btn-link">
@@ -473,27 +478,101 @@
         <div class="row flex-grow-1">
           <main aria-label="Main Content" class="col-12 col-lg-11 col-xl-9 px-md-4">
             
-              
+              <!-- Refactor the HTML structure -->
+
+
+
+<!--
+  In order to allow a wide table to scroll horizontally,
+  we suround the markdown table with `<div class="table-wrapper">` and `</div>`
+-->
+
+
+
+<!--
+  Fixed kramdown code highlight rendering:
+  https://github.com/penibelst/jekyll-compress-html/issues/101
+  https://github.com/penibelst/jekyll-compress-html/issues/71#issuecomment-188144901
+-->
+
+
+
+<!-- Change the icon of checkbox -->
+
+
+
+<!-- Handle images -->
+
+
+
+
+
+<!-- Add header for code snippets -->
+
+
+
+<!-- Create heading anchors -->
+
+
+
+
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+<!-- return -->
+
 
 
 
 <article class="px-1">
-  
+  <header>
+    <div id="waifu">
+  <div id="waifu-message"></div>
+  <div class="waifu-tool">
+    <span class="icon-next"></span>
+    <span class="icon-home"></span>
+    <span class="icon-message"></span>
+    <span class="icon-camera"></span>
+    <span class="icon-volumeup"></span>
+    <span class="icon-volumedown"></span>
+    <span class="icon-about"></span>
+    <span class="icon-cross"></span>
+  </div>
+  <canvas id="live2d2"></canvas>
+  <canvas id="live2d5"></canvas>
+</div>
+<!-- src 中改为你存放的路径 -->
+<script src="/assets/live2djs/dist/live2d_bundle.js"></script>
+<script async type="module" src="/assets/live2djs/waifu-tips.js"></script>
+
+    <h1 data-toc-skip>关于捷变频雷达相参积累的思考</h1>
     
 
-
-
-<div id="page-tag">
-  <h1 class="ps-lg-2">
-    <i class="fa fa-tag fa-fw text-muted"></i>
-    MATLAB
-    <span class="lead text-muted ps-2">1</span>
-  </h1>
-  <ul class="content ps-0">
-    
-      <li class="d-flex justify-content-between px-md-3">
-        <a href="/posts/MATLAB/">MATLAB使用心得汇总</a>
-        <span class="dash flex-grow-1"></span>
+    <div class="post-meta text-muted">
+      <!-- published date -->
+      <span>
+        Posted
         <!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
@@ -504,22 +583,215 @@
 
 <time
   
-    class="text-muted small text-nowrap"
-  
-  data-ts="1712712970"
+  data-ts="1744283383"
   data-df="ll"
   
+    data-bs-toggle="tooltip" data-bs-placement="bottom"
+  
 >
-  Apr 10, 2024
+  Apr 10, 2025
 </time>
 
-      </li>
+      </span>
+
+      <!-- lastmod date -->
+      
+
+      
+
+      <div class="d-flex justify-content-between">
+        <!-- author(s) -->
+        <span>
+          
+
+          By
+
+          <em>
+            
+              
+                <a href="https://github.com/huang-cumt/">Xinyu Huang</a>
+                
+              
+            
+          </em>
+        </span>
+
+        <!-- read time -->
+        <!-- Calculate the post's reading time, and display the word count in tooltip -->
+
+
+
+<!-- words per minute -->
+
+
+
+
+
+
+
+
+
+
+<!-- return element -->
+<span
+  class="readtime"
+  data-bs-toggle="tooltip"
+  data-bs-placement="bottom"
+  title="656 words"
+>
+  <em>3 min</em> read</span>
+
+      </div>
+      <!-- .d-flex -->
+    </div>
+    <!-- .post-meta -->
+  </header>
+
+  <div class="content">
+    <p>考虑捷变频雷达发射脉冲串载频随机变化，我们可以增强雷达的抗截获能力，同时可以合成大宽带波形从而实现距离分辨率的提升。</p>
+
+<div class="table-wrapper"><table>
+  <tbody>
+    <tr>
+      <td>假设雷达的初始载频为$f_c$，第$n$个脉冲的载频为$f_n=f_c+d_n\Delta f$，其中$\Delta f$为载频跳跃间隔，$d_n$为载频序列码字，且有$\left{ d_n</td>
+      <td>d_n\in \mathbb{Z}, d_n/2\in\mathbb{Z}, 0\leq d_n \leq M-1 \right}$。</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<p>不失一般性，假设脉内信号可以表征为$s(t)=\text{rect}(\frac{t}{T})\cdot a(t)$，其中$T$为脉冲宽度，$a(t)$为脉内调制信号，$\text{rect}(\cdot)$为标准矩形脉冲信号，定义为:</p>
+
+\[\text{rect}(x)=\left\{
+\begin{aligned}
+&amp; 1, &amp;0\leq x \leq 1 \\
+&amp; 0, &amp;\text{otherwise}
+\end{aligned}
+ \right.\]
+
+<p>因此，第$n$个发射脉冲可以表示为:</p>
+
+\[T_{x,n}(t)=s(t-nT_r)e^{j2\pi f_n(t-nT_r)}\]
+
+<p>不失一般性，以雷达发射第一个脉冲为时间零点，考虑对于空间中沿雷达径向匀速运动的目标，初始位置为r(0)，径向速度为v，有其距离函数满足$r(t)=r(0)+vt$成立。</p>
+
+<p>假设雷达脉冲的发射时间为$t_t$，接收到对应回波的时间为$t_r$，则雷达脉冲在$\frac{t_t+t_r}{2}$处击中目标，因此有：</p>
+
+\[c(t_r-t_t)=2r(\frac{t_t+t_r}{2})\]
+
+<p>因此可以得到：</p>
+
+\[t_t = \frac{c-v}{c+v}t_r +\frac{2r(0)}{c+v} = t_r-\frac{2v}{c+v}t_r+\frac{2r(0)}{c+v}\]
+
+<p>因此，第$n$个回波脉冲可以表示为第$n$个脉冲的时间延迟，即：</p>
+
+\[R_{x,n}(t_r)=\alpha T_{x,n}(t_t)=\alpha T_{x,n}(\frac{c-v}{c+v}t_r +\frac{2r(0)}{c+v})\]
+
+<p>其中$\alpha$为目标的后向反射系数，化简可以得到：</p>
+
+\[\begin{aligned}
+R_{x,n}(t_r) &amp;= \alpha s(\frac{c-v}{c+v}t_r +\frac{2r(0)}{c+v}-nT_r)e^{j2\pi f_n(\frac{c-v}{c+v}t_r +\frac{2r(0)}{c+v}-nT_r)}\\
+   &amp;=\alpha s(t_r-\frac{2v}{c+v}t_r+\tau_0-nT_r)e^{j2\pi f_n(t_r-\frac{2v}{c+v}t_r+\tau_0-nT_r)} \\
+   &amp;=\alpha s(t_r-\frac{2v}{c+v}t_r+\tau_0-nT_r)e^{j2\pi f_n(t_r+\tau_0-nT_r)}e^{j2\pi f_{d,n}t_r} \\
+\end{aligned}\]
+
+<p>其中$\tau_0=\frac{2r(0)}{c+v}$表征距离延迟，$f_{d,n}=-\frac{2v}{c+v}f_n$表征多普勒频偏；</p>
+
+<p>不失一般性，可以假设$\frac{2v}{c+v}\approx 0$，同时使用$t$替换$t_r$，可以得到近似后的回波模型：</p>
+
+\[R^{\prime}_{x,n}(t)=\alpha s(t+\tau_0-nT_r)e^{j2\pi f_n(t+\tau_0-nT_r)}e^{j2\pi f_{d,n}t}\]
+
+<p>观察表达式可以发现，不同子脉冲间无法积累的根源是$f_n$不一致带来的频偏$f_{d,n}$不一致以及变化不规律所导致的。考虑在非捷变频信号中，对于同一目标不同子载波的频偏一致、初始相位等间隔分布，因此对于捷变频信号的积累问题即为对于频偏矫正以及初相矫正的两个子问题。</p>
+
+<p>当$f_c=k\Delta f$（$k$为整数）成立时，此时有$f_n=(k+d_n)\Delta f$成立，假设我们以$f_s$的采样频率对接收到的信号进行采样，即$t=\frac{n}{f_s}$，假如对其进行$k+d_n$的抽取，即可使得接收信号的频率偏移被矫正，但是这需要满足采样序列长度为${k+d_1,k+d_2,\cdots,k+d_n}$的公倍数，</p>
+
+  </div>
+
+  <div class="post-tail-wrapper text-muted">
+    <!-- categories -->
     
-  </ul>
+      <div class="post-meta mb-3">
+        <i class="far fa-folder-open fa-fw me-1"></i>
+        
+          <a href="/categories/%E7%A7%91%E7%A0%94%E8%AE%B0%E5%BD%95/">科研记录</a>
+      </div>
+    
+
+    <!-- tags -->
+    
+      <div class="post-tags">
+        <i class="fa fa-tags fa-fw me-1"></i>
+        
+          <a
+            href="/tags/%E6%8D%B7%E5%8F%98%E9%A2%91-%E9%9B%B7%E8%BE%BE-%E7%9B%B8%E5%8F%82%E7%A7%AF%E7%B4%AF/"
+            class="post-tag no-text-decoration"
+          >捷变频、雷达、相参积累</a>
+        
+      </div>
+    
+
+    <div
+      class="
+        post-tail-bottom
+        d-flex justify-content-between align-items-center mt-5 pb-2
+      "
+    >
+      <div class="license-wrapper">
+        
+          
+
+          This post is licensed under 
+        <a href="https://creativecommons.org/licenses/by/4.0/">
+          CC BY 4.0
+        </a>
+         by the author.
+        
+      </div>
+
+      <!-- Post sharing snippet -->
+
+<div class="share-wrapper d-flex align-items-center">
+  <span class="share-label text-muted">Share</span>
+  <span class="share-icons">
+    
+    
+    
+
+    
+
+      
+
+      <a href="http://service.weibo.com/share/share.php?title=%E5%85%B3%E4%BA%8E%E6%8D%B7%E5%8F%98%E9%A2%91%E9%9B%B7%E8%BE%BE%E7%9B%B8%E5%8F%82%E7%A7%AF%E7%B4%AF%E7%9A%84%E6%80%9D%E8%80%83%20-%20Fish&url=https%3A%2F%2Fhuang-cumt.github.io%2Fposts%2F%25E6%258D%25B7%25E5%258F%2598%25E9%25A2%2591%25E7%259B%25B8%25E5%258F%2582%25E6%2580%259D%25E8%2580%2583%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Weibo" aria-label="Weibo">
+        <i class="fa-fw fab fa-weibo"></i>
+      </a>
+    
+
+      
+
+      <a href="https://www.zhihu.com/" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="zhihu" aria-label="zhihu">
+        <i class="fa-fw fa-brands fa-zhihu"></i>
+      </a>
+    
+
+    <button
+      id="copy-link"
+      aria-label="Copy link"
+      class="btn small"
+      data-bs-toggle="tooltip"
+      data-bs-placement="top"
+      title="Copy link"
+      data-title-succeed="Link copied successfully!"
+    >
+      <i class="fa-fw fas fa-link pe-none fs-6"></i>
+    </button>
+  </span>
 </div>
 
-  
+    </div>
+    <!-- .post-tail-bottom -->
+  </div>
+  <!-- div.post-tail-wrapper -->
 </article>
+
 
             
           </main>
@@ -945,12 +1217,246 @@
             </div>
 
             
+              
+              
+
+
+
+
+            
           </aside>
         </div>
 
         <div class="row">
           <!-- tail -->
           <div id="tail-wrapper" class="col-12 col-lg-11 col-xl-9 px-md-4">
+            
+              
+              <!-- Recommend the other 3 posts according to the tags and categories of the current post. -->
+
+<!-- The total size of related posts -->
+
+
+<!-- An random integer that bigger than 0 -->
+
+
+<!-- Equals to TAG_SCORE / {max_categories_hierarchy} -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+  <aside id="related-posts" aria-labelledby="related-label">
+    <h3 class="mb-4" id="related-label">Further Reading</h3>
+    <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
+      
+        <article class="col">
+          <a href="/posts/%E7%A7%91%E7%A0%94%E8%AE%B0%E5%BD%95-%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB-PFPA%E9%9B%B7%E8%BE%BE/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1716023639"
+  data-df="ll"
+  
+>
+  May 18, 2024
+</time>
+
+              <h4 class="pt-0 my-2">Distant Sidelobe Suppression for Multi-Timeslot Wide-Gap Frequency-Hopping RFPA Radar 论文阅读</h4>
+              <div class="text-muted">
+                <p>论文地址: Distant Sidelobe Suppression for Multi-Timeslot Wide-Gap Frequency-Hopping RFPA Radar
+
+期刊/会议: IEEE Transactions on Aerospace and Electronic Systems
+
+发表时间: 2024
+
+0. 前言
+
+随机频率与脉冲重复间隔捷变(Random fr...</p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/%E7%A7%91%E7%A0%94%E8%AE%B0%E5%BD%95-%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB01/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1710485416"
+  data-df="ll"
+  
+>
+  Mar 15, 2024
+</time>
+
+              <h4 class="pt-0 my-2">LPI Radar Waveform Design With Desired Cyclic Spectrum and Pulse Compression Properties 论文阅读</h4>
+              <div class="text-muted">
+                <p>论文地址：LPI Radar Waveform Design With Desired Cyclic Spectrum and Pulse Compression Properties
+
+期刊/会议：IEEE TRANSACTIONS ON VEHICULAR TECHNOLOGY
+
+发表时间：2023
+
+0. 模型构建
+
+针对于相位编码信号$\boldsymbol{x}=[x_1,x_2,...</p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/%E7%A7%91%E7%A0%94%E8%AE%B0%E5%BD%95-%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BBPSL/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1687326997"
+  data-df="ll"
+  
+>
+  Jun 21, 2023
+</time>
+
+              <h4 class="pt-0 my-2">A Coordinate Descent Framework to Design Low PSL ISL Sequences 论文阅读</h4>
+              <div class="text-muted">
+                <p>论文地址：A Coordinate Descent Framework to Design Low PSL ISL Sequences
+
+期刊/会议：IEEE TRANSACTIONS ON Signal Processing
+
+发表时间：2017
+
+1. 问题建模
+
+在雷达系统的脉冲压缩过程中，通常希望具有低的峰值旁瓣电平（Peak Sidelobe Level, PSL）避免弱目标被强目...</p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+    </nav>
+  </aside>
+  <!-- #related-posts -->
+
+
+            
+              
+              <!-- Navigation buttons at the bottom of the post. -->
+
+<nav class="post-navigation d-flex justify-content-between" aria-label="Post Navigation">
+  
+  
+
+  
+    <a
+      href="/posts/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%E8%AE%B0%E5%BD%95/"
+      class="btn btn-outline-primary"
+      aria-label="Older"
+    >
+      <p>论文阅读记录</p>
+    </a>
+  
+
+  
+    <a
+      href="/posts/OMP%E5%8F%8A%E5%85%B6%E7%9B%B8%E5%85%B3%E7%AE%97%E6%B3%95/"
+      class="btn btn-outline-primary"
+      aria-label="Newer"
+    >
+      <p>Omp及其相关算法</p>
+    </a>
+  
+</nav>
+
+            
+              
+              <!-- The comments switcher -->
+
+
             
 
             <!-- The Footer -->
@@ -1410,6 +1916,13 @@
 
 
 
+  
+
+  
+    <!-- image lazy-loading & popup & clipboard -->
+    
+  
+
 
 
 
@@ -1459,16 +1972,37 @@
 
   
 
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
 
 
-  <script src="https://cdn.jsdelivr.net/combine/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/dayjs@1.11.11/dayjs.min.js,npm/dayjs@1.11.11/locale/en.min.js,npm/dayjs@1.11.11/plugin/relativeTime.min.js,npm/dayjs@1.11.11/plugin/localizedFormat.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/combine/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.umd.min.js,npm/glightbox@3.3.0/dist/js/glightbox.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.11/dayjs.min.js,npm/dayjs@1.11.11/locale/en.min.js,npm/dayjs@1.11.11/plugin/relativeTime.min.js,npm/dayjs@1.11.11/plugin/localizedFormat.min.js"></script>
 
 
 
 
 
 
-<script src="/assets/js/dist/misc.min.js"></script>
+<script src="/assets/js/dist/post.min.js"></script>
 
 
 

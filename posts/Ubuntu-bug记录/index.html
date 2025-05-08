@@ -49,24 +49,24 @@
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.4" />
-<meta property="og:title" content="公式推导" />
+<meta property="og:title" content="Ubuntu BUG记录" />
 <meta name="author" content="Xinyu Huang" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="[\begin{align} f(\boldsymbol{x}) &amp;= \sum_{\alpha}\sum_{f}{\omega_{\alpha}} \Re \left{ {\left( \boldsymbol{F}N\boldsymbol{x} \right)}^H \varGamma{\alpha,f} {\left( \boldsymbol{F}_N\boldsymbol{x} \right)} \right} &amp;= \Re \left{ {\boldsymbol{x}}^H \boldsymbol{S} {\boldsymbol{x}} \right} \end{align}]" />
-<meta property="og:description" content="[\begin{align} f(\boldsymbol{x}) &amp;= \sum_{\alpha}\sum_{f}{\omega_{\alpha}} \Re \left{ {\left( \boldsymbol{F}N\boldsymbol{x} \right)}^H \varGamma{\alpha,f} {\left( \boldsymbol{F}_N\boldsymbol{x} \right)} \right} &amp;= \Re \left{ {\boldsymbol{x}}^H \boldsymbol{S} {\boldsymbol{x}} \right} \end{align}]" />
-<link rel="canonical" href="https://huang-cumt.github.io/posts/%E5%85%AC%E5%BC%8F%E6%8E%A8%E5%AF%BC/" />
-<meta property="og:url" content="https://huang-cumt.github.io/posts/%E5%85%AC%E5%BC%8F%E6%8E%A8%E5%AF%BC/" />
+<meta name="description" content="0. 网卡Debug" />
+<meta property="og:description" content="0. 网卡Debug" />
+<link rel="canonical" href="https://huang-cumt.github.io/posts/Ubuntu-bug%E8%AE%B0%E5%BD%95/" />
+<meta property="og:url" content="https://huang-cumt.github.io/posts/Ubuntu-bug%E8%AE%B0%E5%BD%95/" />
 <meta property="og:site_name" content="Fish" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-05-20T22:01:08+08:00" />
+<meta property="article:published_time" content="2024-05-24T14:31:18+08:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="公式推导" />
+<meta property="twitter:title" content="Ubuntu BUG记录" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Xinyu Huang","url":"https://github.com/huang-cumt/"},"dateModified":"2024-05-20T22:01:08+08:00","datePublished":"2024-05-20T22:01:08+08:00","description":"[\\begin{align} f(\\boldsymbol{x}) &amp;= \\sum_{\\alpha}\\sum_{f}{\\omega_{\\alpha}} \\Re \\left{ {\\left( \\boldsymbol{F}N\\boldsymbol{x} \\right)}^H \\varGamma{\\alpha,f} {\\left( \\boldsymbol{F}_N\\boldsymbol{x} \\right)} \\right} &amp;= \\Re \\left{ {\\boldsymbol{x}}^H \\boldsymbol{S} {\\boldsymbol{x}} \\right} \\end{align}]","headline":"公式推导","mainEntityOfPage":{"@type":"WebPage","@id":"https://huang-cumt.github.io/posts/%E5%85%AC%E5%BC%8F%E6%8E%A8%E5%AF%BC/"},"url":"https://huang-cumt.github.io/posts/%E5%85%AC%E5%BC%8F%E6%8E%A8%E5%AF%BC/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Xinyu Huang","url":"https://github.com/huang-cumt/"},"dateModified":"2024-05-24T14:31:18+08:00","datePublished":"2024-05-24T14:31:18+08:00","description":"0. 网卡Debug","headline":"Ubuntu BUG记录","mainEntityOfPage":{"@type":"WebPage","@id":"https://huang-cumt.github.io/posts/Ubuntu-bug%E8%AE%B0%E5%BD%95/"},"url":"https://huang-cumt.github.io/posts/Ubuntu-bug%E8%AE%B0%E5%BD%95/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title>公式推导 | Fish
+  <title>Ubuntu BUG记录 | Fish
   </title>
 
   <!--
@@ -438,7 +438,7 @@
         
           
             
-              <span>公式推导</span>
+              <span>Ubuntu BUG记录</span>
             
 
           
@@ -521,6 +521,49 @@
   
 
   
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+
+    
+  
 
   
   
@@ -566,7 +609,7 @@
 <script src="/assets/live2djs/dist/live2d_bundle.js"></script>
 <script async type="module" src="/assets/live2djs/waifu-tips.js"></script>
 
-    <h1 data-toc-skip>公式推导</h1>
+    <h1 data-toc-skip>Ubuntu BUG记录</h1>
     
 
     <div class="post-meta text-muted">
@@ -583,13 +626,13 @@
 
 <time
   
-  data-ts="1716213668"
+  data-ts="1716532278"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  May 20, 2024
+  May 24, 2024
 </time>
 
       </span>
@@ -637,9 +680,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="625 words"
+  title="1288 words"
 >
-  <em>3 min</em> read</span>
+  <em>7 min</em> read</span>
 
       </div>
       <!-- .d-flex -->
@@ -648,107 +691,200 @@
   </header>
 
   <div class="content">
-    \[\begin{align}
-f(\boldsymbol{x}) &amp;= 
-\sum_{\alpha}\sum_{f}{\omega_{\alpha}} 
-\Re
-\left\{
-{\left( \boldsymbol{F}_N\boldsymbol{x} \right)}^H \varGamma_{\alpha,f} {\left( \boldsymbol{F}_N\boldsymbol{x} \right)}
-\right\}\\
-&amp;=
-\Re
-\left\{
-{\boldsymbol{x}}^H  \boldsymbol{S}  {\boldsymbol{x}}
-\right\}
-\end{align}\]
+    <h2 id="0-网卡debug"><span class="me-2">0. 网卡Debug</span><a href="#0-网卡debug" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<p>其中有$\varGamma = \sum_{\alpha}\sum_{f}{\omega_{\alpha}} \varGamma_{\alpha,f}$,$\boldsymbol{S}=\boldsymbol{F}_N^H \varGamma\boldsymbol{F}_N$。</p>
+<p>系统: Ubuntu 20.04
+内核版本： 6.5.0-35-generic
+主板：MSI MOTORA B760M WIFI DDR5 II</p>
 
-<p>由于循环谱的对称性，可以注意到实际上为一个实对称矩阵，即有$\varGamma^H=\varGamma$，由于$\boldsymbol{F}_N$为一个Hermite矩阵，因此我们有S为一个Hermite矩阵，因此目标函数事实上构成一个复二次型。</p>
+<p>近期在主机上新增了一块nvme固态硬盘，新装上之后有线网卡不能正常使用，wifi可以正常使用。但是一旦移除新增的硬盘，网络又可以正常使用了。下附个人解决思路与方案。</p>
 
-<p>我们考虑使用坐标下降法求解此问题，下面进行问题的理论分析与公式推导：</p>
+<p>先说结论：该问题疑似由ubuntu的udev规则机制引起，即在增加了新的固态硬盘之后，系统会重新分配网卡的名称，导致在网络配置文件中的网卡名称与实际网卡名称并不匹配，因此不能正确加载网卡配置。</p>
 
-<p>假设我们的目标信号是相位编码信号，$\boldsymbol{x} \in \mathbb{C}^{N\times 1}$，$\boldsymbol{S}\in \mathbb{C}^{N\times N}$</p>
+<p>解决思路：</p>
 
-\[\begin{aligned}
-f \left( \boldsymbol{x} \right) &amp;= \Re
-\left\{
-{\boldsymbol{x}}^H  \boldsymbol{S}  {\boldsymbol{x}}
-\right\}
-\\
-&amp;=\Re
-\left\{
-\sum_{m=1}^{N}\sum_{n=1}^{N}x_m^H S_{m,n} x_n
-\right\}
-\end{aligned}\]
+<ol>
+  <li>主机安装了双系统，切换到Windows后发现有线网络是可以正常使用的，排除硬件层面问题。</li>
+  <li>重新安装网卡驱动，问题仍然存在，排除驱动问题。</li>
+  <li>在不断重启中发现，有时会直接不显示网卡。</li>
+</ol>
 
-<p>因此我们有</p>
+<p>对于3.中问题，解决方案如下:</p>
 
-\[\begin{aligned}
-f\left( x_k \right) = &amp; \sum_{m=1,m\neq k}^{N} \sum_{n=1,n\neq k}^{N} \Re \left( {x_m^H S_{m,n} x_n} \right) + \Re \left( x_k^H S_{k,k} x_k \right) 
-\\
-&amp; +\sum_{m=1,m\neq k}^{N} \Re \left( x_m^H S_{m,k} x_k \right)
-  +\sum_{n=1,n\neq k}^{N} \Re \left( x_k^H S_{k,n} x_n \right)\\
-\end{aligned}\]
+<div class="language-shell highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre><span class="c"># 查看启用的网卡</span>
+ifconfig
+<span class="c"># 查看所有网卡</span>
+ifconfig <span class="nt">-a</span>
+</pre></td></tr></tbody></table></code></div></div>
 
-<p>考虑到$x_k = e^{j\phi_k} = \cos\phi_k + i \sin\phi_k$，令$\beta_k = \tan \left( \frac{\phi_k}{2} \right)$，
-因此我们有$x_{k,r} \coloneqq \Re\left(x_k\right) = \frac{2\beta_k}{1+\beta_k^2}$,$x_{k,i}\coloneqq \Im\left(x_k\right) = \frac{1-\beta_k^2}{1+\beta_k^2}$</p>
+<p>可以看到设备存在但是没有被挂载。使用<code class="language-plaintext highlighter-rouge">sudo vim /etc/NetworkManager/NetworkManager.conf</code>查看文件内容，并修改<code class="language-plaintext highlighter-rouge">managed=true</code>,修改完毕后重启，网卡可以正常显示。</p>
 
-<p>故可以得到</p>
+<div class="language-shell highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="o">[</span>main]                                                                      
+<span class="nv">plugins</span><span class="o">=</span>ifupdown,keyfile
+dns <span class="o">=</span> default
+<span class="o">[</span>ifupdown]
+<span class="nv">managed</span><span class="o">=</span><span class="nb">false</span>
+<span class="o">[</span>device]
+wifi.scan-rand-mac-address<span class="o">=</span>no
+</pre></td></tr></tbody></table></code></div></div>
 
-\[f\left(x_{k,r},x_{k,i}\right)=a_k (x_{k,r}^2+x_{k,i}^2) + b_k x_{k,r} + c_k x_{k,i} + d_k\]
+<p>解决了网卡显示的问题之后，网络问题仍然存在。</p>
 
-<p>其中有</p>
+<ol>
+  <li>经过多次重启测试后发现，一旦新加上该硬盘，网卡名称将由<code class="language-plaintext highlighter-rouge">enp4s0</code>变为<code class="language-plaintext highlighter-rouge">enp5s0</code>，且在NetworkManager中二者的配置文件也并不通用。</li>
+</ol>
 
-\[\begin{aligned}
-  a_k &amp;= \Re \left( S_{k,k} \right) \\
-  b_k &amp;= \sum_{n=1,n\neq k}^{N}\Re\left( S_{k,n}x_n\right) + \sum_{m=1,m\neq k}^{N}\Re \left( x_m^H S_{m,k}\right)\\
-  c_k &amp;= \sum_{n=1,n\neq k}^{N}\Im\left( S_{k,n}x_n\right) - \sum_{m=1,m\neq k}^{N}\Im \left( x_m^H S_{m,k}\right) \\
-  d_k &amp;= \sum_{m=1,m\neq k}^{N} \sum_{n=1,n\neq k}^{N} \Re \left( {x_m^H S_{m,n} x_n} \right) 
-\end{aligned}\]
+<p>对于4.中现象，怀疑是由于网卡名称改变导致网络并不能正常加载，因此尝试使得网卡名称不变，方案如下：</p>
 
-<p>带入有</p>
+<p>使用<code class="language-plaintext highlighter-rouge">sudo vim /etc/default/grub</code>打开配置文件，将<code class="language-plaintext highlighter-rouge">GRUB_CMDLINE_LINUX=""</code>修改为<code class="language-plaintext highlighter-rouge">GRUB_CMDLINE_LINUX="net.ifnames=0 biosdevname=0"</code>，保存并关闭后输入<code class="language-plaintext highlighter-rouge">sudo update-grub</code>。之后重启。
+该参数用于修改GRUB配置中网络接口的命名规则，<code class="language-plaintext highlighter-rouge">net.ifnames=0</code>参数会禁用Predictable Network Interface即可预测的网络接口的命名行为，<code class="language-plaintext highlighter-rouge">biosdevname</code>提供了一种网络设备命名机制，当<code class="language-plaintext highlighter-rouge">biosdevname=0</code>时，该工具将不会被使用。</p>
 
-\[f\left(\beta_k\right) = \frac{a_k \beta_k^4+\left(2a_k-c_k+d_k\right)\beta_k^2+2b_k\beta_k+\left(a_k+c_k+d_k\right)}{1+\beta_k^2}\]
+<p>至此，重启后问题解决。</p>
 
-<p>显然，</p>
+<h2 id="1-风扇控制"><span class="me-2">1. 风扇控制</span><a href="#1-风扇控制" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-\[f^\prime (\beta_k) = \frac{4a_k\beta_k^5-2a_k\beta_k^4-2b_k\beta_k^2+(2a_k-4c_k)\beta_k+2b_k}{(1+\beta_k^2)^2}\]
+<p>系统: Ubuntu 20.04
+内核版本： 6.5.0-35-generic
+主板：MSI MOTORA B760M WIFI DDR5 II</p>
 
-<p>分母恒为正数，可以直接求得分子的零点即为</p>
+<p>因使用分体式水冷，水冷风扇、水泵是与显卡独立的，因此尝试改变其风扇控制策略。网上常见的风扇控制策略为使用<code class="language-plaintext highlighter-rouge">lm-control</code>检测传感器并使用<code class="language-plaintext highlighter-rouge">fancontrol</code>软件进行控制；这两个库ubuntu均没有预装，使用如下指令安装。</p>
 
-<p>这是一个典型的分式规划问题，我们可以使用Dinkelbach算法进行求解。由于分子为四阶多项式，分母为二阶多项式，其总是存在极值。</p>
+<div class="language-shell highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre><span class="nb">sudo </span>apt-get <span class="nb">install </span>lm-sensors <span class="c"># Install lm-sensors</span>
+<span class="nb">sudo </span>apt-get <span class="nb">install </span>fancontrol <span class="c"># Install fancontrol</span>
+</pre></td></tr></tbody></table></code></div></div>
 
-<blockquote>
-  <p>注意在这里$a_k$有可能取负值，针对于负值情况，此时$f(\beta_k)$没有最小值，因为其在正负无穷两端都趋向于负无穷。</p>
-</blockquote>
+<p>安装完后使用<code class="language-plaintext highlighter-rouge">sudo sensors-detect</code>进行传感器匹配配置，在我所使用的主板上，主板控制芯片并没有安装，在匹配过程中看到如下提示：</p>
 
-<blockquote>
-  <p class="prompt-tip">在这里，分母的正负并不能够进行判断，是否可以使用Dinkelbach算法对其进行求解？</p>
-</blockquote>
+<div class="language-shell highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre></td><td class="rouge-code"><pre>Some Super I/O chips contain embedded sensors. We have to write to
+standard I/O ports to probe them. This is usually safe.
+Do you want to scan <span class="k">for </span>Super I/O sensors? <span class="o">(</span>YES/no<span class="o">)</span>: <span class="nb">yes
+</span>Probing <span class="k">for </span>Super-I/O at 0x2e/0x2f
+Trying family <span class="sb">`</span>National Semiconductor/ITE<span class="s1">'...               No
+Trying family `SMSC'</span>...                                     No
+Trying family <span class="sb">`</span>VIA/Winbond/Nuvoton/Fintek<span class="s1">'...               No
+Trying family `ITE'</span>...                                      No
+Probing <span class="k">for </span>Super-I/O at 0x4e/0x4f
+Trying family <span class="sb">`</span>National Semiconductor/ITE<span class="s1">'...               No
+Trying family `SMSC'</span>...                                     No
+Trying family <span class="sb">`</span>VIA/Winbond/Nuvoton/Fintek<span class="s1">'...               Yes
+Found unknown chip with ID 0xd592
+</span></pre></td></tr></tbody></table></code></div></div>
 
-<ul>
-  <li>考虑$f(x)\propto f^\prime(x)$</li>
-  <li>强行使用该算法是否对其进行优化？</li>
-</ul>
+<p>这说明对应的驱动我们并没有安装，但是可以看到使用的主板控制器芯片为Nuvoton，经查阅后发现MSI主板常使用<code class="language-plaintext highlighter-rouge">nct6683</code>与<code class="language-plaintext highlighter-rouge">nct6687</code>型号的控制器芯片，尝试安装：</p>
 
-<p>Dinkelbach算法用于求解分式规划问题，假设$f(x)=\frac{g(x)}{h(x)}$，其中$g(x)$与$h(x)$为多项式函数，假设我们需要最小化这个目标函数。Dinkelbach算法的处理流程如下：</p>
+<div class="language-shell highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="nb">sudo </span>modprobe nct6687
+modprobe: FATAL: Module nct6687 not found <span class="k">in </span>directory /lib/modules/6.5.0-41-generic
+<span class="nb">sudo </span>modprobe nct6683
+</pre></td></tr></tbody></table></code></div></div>
 
-<ul>
-  <li>初始化: $\beta_k$，$\lambda$，$\delta$，给定初始取值。</li>
-  <li>Step 1: 计算$\beta_k = \arg \max\limits_{x\in \mathcal{X}} g(\beta_k)-\lambda_k h(\beta_k)$，$f(\beta_k)$</li>
-  <li>Step 2: 判断$f(\beta_k)\leq \delta$，若成立，跳转至Step 4，否则跳转至Step 3。</li>
-  <li>Step 3: 计算$\lambda_k= \frac{g(\beta_k)}{h(\beta_k)}$，跳转至Step 1</li>
-  <li>Step 4: $\beta^* = \beta_k$</li>
-</ul>
+<p><code class="language-plaintext highlighter-rouge">sudo modprobe nct6683</code>时没有报错返回，说明本主板使用的是这一款控制器，此时再使用<code class="language-plaintext highlighter-rouge">sensors</code>查看传感器，已经可以看到风扇等其它传感器的信息。</p>
+
+<div class="language-shell highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class="rouge-code"><pre>fan1:            870 RPM  <span class="o">(</span>min <span class="o">=</span>    0 RPM<span class="o">)</span>
+fan2:              0 RPM  <span class="o">(</span>min <span class="o">=</span>    0 RPM<span class="o">)</span>
+fan3:              0 RPM  <span class="o">(</span>min <span class="o">=</span>    0 RPM<span class="o">)</span>
+fan4:            996 RPM  <span class="o">(</span>min <span class="o">=</span>    0 RPM<span class="o">)</span>
+fan5:           1016 RPM  <span class="o">(</span>min <span class="o">=</span>    0 RPM<span class="o">)</span>
+fan6:              0 RPM  <span class="o">(</span>min <span class="o">=</span>    0 RPM<span class="o">)</span>
+fan7:              0 RPM  <span class="o">(</span>min <span class="o">=</span>    0 RPM<span class="o">)</span>
+fan8:              0 RPM  <span class="o">(</span>min <span class="o">=</span>    0 RPM<span class="o">)</span>
+fan9:              0 RPM  <span class="o">(</span>min <span class="o">=</span>    0 RPM<span class="o">)</span>
+fan10:             0 RPM  <span class="o">(</span>min <span class="o">=</span>    0 RPM<span class="o">)</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>返回如下，说明当前使用的是1、4、5号三个接口，fan的编号通常与pwm编号相同，具体的fan对应于主板上的接口可能需要手动调节观察以确定。</p>
+
+<p>下一步需要确定pwm配置文件的路径。使用<code class="language-plaintext highlighter-rouge">ls /sys/class/hwmon/hwmon*/</code>可以查看系统硬件情况，可以看到含有pwm的文件，该文件即为对应风扇的配置文件。我这里在<code class="language-plaintext highlighter-rouge">/sys/class/hwmon/hwmon6/pwm*</code>路径下看到了一系列pwm配置文件。尝试对其进行更改，但是返回信息提示</p>
+
+<div class="language-shell highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>/usr/sbin/pwmconfig: line 180: hwmon6/pwm2: Permission denied
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>即便使用<code class="language-plaintext highlighter-rouge">sudo</code>权限执行该指令仍然会出现这一个问题。</p>
+
+<div class="language-shell highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>
+</pre></td></tr></tbody></table></code></div></div>
+
+<h2 id="ubuntu-desktop-file-create"><span class="me-2">Ubuntu desktop file create</span><a href="#ubuntu-desktop-file-create" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
   </div>
 
   <div class="post-tail-wrapper text-muted">
     <!-- categories -->
     
+      <div class="post-meta mb-3">
+        <i class="far fa-folder-open fa-fw me-1"></i>
+        
+          <a href="/categories/other/">Other</a>
+      </div>
+    
 
     <!-- tags -->
+    
+      <div class="post-tags">
+        <i class="fa fa-tags fa-fw me-1"></i>
+        
+          <a
+            href="/tags/ubuntu/"
+            class="post-tag no-text-decoration"
+          >Ubuntu</a>
+        
+      </div>
     
 
     <div
@@ -782,7 +918,7 @@ f\left( x_k \right) = &amp; \sum_{m=1,m\neq k}^{N} \sum_{n=1,n\neq k}^{N} \Re \l
 
       
 
-      <a href="http://service.weibo.com/share/share.php?title=%E5%85%AC%E5%BC%8F%E6%8E%A8%E5%AF%BC%20-%20Fish&url=https%3A%2F%2Fhuang-cumt.github.io%2Fposts%2F%25E5%2585%25AC%25E5%25BC%258F%25E6%258E%25A8%25E5%25AF%25BC%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Weibo" aria-label="Weibo">
+      <a href="http://service.weibo.com/share/share.php?title=Ubuntu%20BUG%E8%AE%B0%E5%BD%95%20-%20Fish&url=https%3A%2F%2Fhuang-cumt.github.io%2Fposts%2FUbuntu-bug%25E8%25AE%25B0%25E5%25BD%2595%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Weibo" aria-label="Weibo">
         <i class="fa-fw fab fa-weibo"></i>
       </a>
     
@@ -1244,6 +1380,11 @@ f\left( x_k \right) = &amp; \sum_{m=1,m\neq k}^{N} \sum_{n=1,n\neq k}^{N} \Re \l
 
 
 
+  <section id="toc-wrapper" class="d-none ps-0 pe-4">
+    <h2 class="panel-heading ps-3 mb-2">Contents</h2>
+    <nav id="toc"></nav>
+  </section>
+
 
             
           </aside>
@@ -1278,6 +1419,70 @@ f\left( x_k \right) = &amp; \sum_{m=1,m\neq k}^{N} \sum_{n=1,n\neq k}^{N} \Re \l
 
 
 
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
 
 
 
@@ -1287,6 +1492,141 @@ f\left( x_k \right) = &amp; \sum_{m=1,m\neq k}^{N} \sum_{n=1,n\neq k}^{N} \Re \l
 
 
 
+
+  <aside id="related-posts" aria-labelledby="related-label">
+    <h3 class="mb-4" id="related-label">Further Reading</h3>
+    <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
+      
+        <article class="col">
+          <a href="/posts/Ubuntu/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1715500602"
+  data-df="ll"
+  
+>
+  May 12, 2024
+</time>
+
+              <h4 class="pt-0 my-2">Ubuntu</h4>
+              <div class="text-muted">
+                <p>1. 开机自启动脚本设置
+
+你可以使用sudo命令来运行需要超级用户权限的脚本，并且可以通过修改sudoers文件来避免输入密码。同时，你可以通过systemd来设置开机自动运行脚本。以下是具体步骤：
+
+
+  
+    打开终端，输入sudo visudo来编辑sudoers文件。
+  
+  
+    在文件末尾添加一行，格式为username ALL=(ALL) NOPASSWD: /pa...</p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/Git/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1712993659"
+  data-df="ll"
+  
+>
+  Apr 13, 2024
+</time>
+
+              <h4 class="pt-0 my-2">Git指令学习</h4>
+              <div class="text-muted">
+                <p>初始化
+
+git init
+
+上传
+
+git add .
+git commit -m “CommitMessage”
+git push
+
+拉取
+
+git fetch 与 git pull的区别
+
+其它
+
+
+  忽略文件
+
+
+touch .gitignore
+
+选择不追踪文件夹中的哪些文件。
+
+
+  创建/切换分支
+
+
+指定ssh密钥连接github
+
+Linux平台下执行sudo git p...</p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/%E5%85%B6%E5%AE%83-%E6%96%87%E4%BB%B6%E6%8C%82%E8%BD%BD/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1712930950"
+  data-df="ll"
+  
+>
+  Apr 12, 2024
+</time>
+
+              <h4 class="pt-0 my-2">ssh远程挂载文件目录</h4>
+              <div class="text-muted">
+                <p>0. 前言
+
+当我们处理服务器上的数据时，上传或者下载显得很冗余且不便于编辑，此时我们可以将远程的文件目录通过 ssh 服务挂载到本地，从而在本地进行服务器端的文件编辑。
+
+在这里我们使用 SSHFS 来实现挂载。SSHFS（SSH Filesystem）是一个基于 FUSE 的文件系统客户端，用于通过 SSH 连接远程目录。SSHFS 使用的是 SFTP 协议，它是 SSH 的一个子系统，...</p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+    </nav>
+  </aside>
+  <!-- #related-posts -->
 
 
             
@@ -1299,21 +1639,21 @@ f\left( x_k \right) = &amp; \sum_{m=1,m\neq k}^{N} \sum_{n=1,n\neq k}^{N} \Re \l
 
   
     <a
-      href="/posts/%E7%A7%91%E7%A0%94%E8%AE%B0%E5%BD%95-%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB-PFPA%E9%9B%B7%E8%BE%BE/"
+      href="/posts/%E5%85%AC%E5%BC%8F%E6%8E%A8%E5%AF%BC2/"
       class="btn btn-outline-primary"
       aria-label="Older"
     >
-      <p>Distant Sidelobe Suppression for Multi-Timeslot Wide-Gap Frequency-Hopping RFPA Radar 论文阅读</p>
+      <p>公式推导2</p>
     </a>
   
 
   
     <a
-      href="/posts/%E5%85%AC%E5%BC%8F%E6%8E%A8%E5%AF%BC2/"
+      href="/posts/HPC%E5%AD%A6%E4%B9%A0/"
       class="btn btn-outline-primary"
       aria-label="Newer"
     >
-      <p>公式推导2</p>
+      <p>Hpc学习</p>
     </a>
   
 </nav>
@@ -1859,9 +2199,16 @@ f\left( x_k \right) = &amp; \sum_{m=1,m\neq k}^{N} \sum_{n=1,n\neq k}^{N} \Re \l
 
   
 
+  
+    
+
+    
+
+  
 
 
-  <script src="https://cdn.jsdelivr.net/combine/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.umd.min.js,npm/glightbox@3.3.0/dist/js/glightbox.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.11/dayjs.min.js,npm/dayjs@1.11.11/locale/en.min.js,npm/dayjs@1.11.11/plugin/relativeTime.min.js,npm/dayjs@1.11.11/plugin/localizedFormat.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/combine/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.umd.min.js,npm/glightbox@3.3.0/dist/js/glightbox.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.11/dayjs.min.js,npm/dayjs@1.11.11/locale/en.min.js,npm/dayjs@1.11.11/plugin/relativeTime.min.js,npm/dayjs@1.11.11/plugin/localizedFormat.min.js,npm/tocbot@4.27.20/dist/tocbot.min.js"></script>
 
 
 

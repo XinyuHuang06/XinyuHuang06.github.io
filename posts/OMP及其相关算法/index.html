@@ -49,22 +49,23 @@
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.4" />
-<meta property="og:title" content="MATLAB" />
+<meta property="og:title" content="Omp及其相关算法" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="Test" />
-<meta property="og:description" content="Test" />
-<link rel="canonical" href="https://huang-cumt.github.io/tags/matlab/" />
-<meta property="og:url" content="https://huang-cumt.github.io/tags/matlab/" />
+<meta name="description" content="在现有的稀疏信号重构算法中，常用的有基追踪算法（BP）1与基于线性规划的$l_1$范数最小化算法。 另一个稀疏恢复算法基于迭代网格搜索，包括正交匹配追踪（OMP） “Compressed sensing,” IEEE Trans. on Information Theory &#8617;&amp;#xfe0e;" />
+<meta property="og:description" content="在现有的稀疏信号重构算法中，常用的有基追踪算法（BP）1与基于线性规划的$l_1$范数最小化算法。 另一个稀疏恢复算法基于迭代网格搜索，包括正交匹配追踪（OMP） “Compressed sensing,” IEEE Trans. on Information Theory &#8617;&amp;#xfe0e;" />
+<link rel="canonical" href="https://huang-cumt.github.io/posts/OMP%E5%8F%8A%E5%85%B6%E7%9B%B8%E5%85%B3%E7%AE%97%E6%B3%95/" />
+<meta property="og:url" content="https://huang-cumt.github.io/posts/OMP%E5%8F%8A%E5%85%B6%E7%9B%B8%E5%85%B3%E7%AE%97%E6%B3%95/" />
 <meta property="og:site_name" content="Fish" />
-<meta property="og:type" content="website" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-05-09T00:00:00+08:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="MATLAB" />
+<meta property="twitter:title" content="Omp及其相关算法" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"Test","headline":"MATLAB","url":"https://huang-cumt.github.io/tags/matlab/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-05-09T00:00:00+08:00","datePublished":"2025-05-09T00:00:00+08:00","description":"在现有的稀疏信号重构算法中，常用的有基追踪算法（BP）1与基于线性规划的$l_1$范数最小化算法。 另一个稀疏恢复算法基于迭代网格搜索，包括正交匹配追踪（OMP） “Compressed sensing,” IEEE Trans. on Information Theory &#8617;&amp;#xfe0e;","headline":"Omp及其相关算法","mainEntityOfPage":{"@type":"WebPage","@id":"https://huang-cumt.github.io/posts/OMP%E5%8F%8A%E5%85%B6%E7%9B%B8%E5%85%B3%E7%AE%97%E6%B3%95/"},"url":"https://huang-cumt.github.io/posts/OMP%E5%8F%8A%E5%85%B6%E7%9B%B8%E5%85%B3%E7%AE%97%E6%B3%95/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title>MATLAB | Fish
+  <title>Omp及其相关算法 | Fish
   </title>
 
   <!--
@@ -133,9 +134,16 @@
   <!-- 3rd-party Dependencies -->
 
   
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.27.20/dist/tocbot.min.css">
   
 
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.min.css">
+  
+
+  
+    <!-- Image Popup -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox@3.3.0/dist/css/glightbox.min.css">
   
 
   <!-- JavaScript -->
@@ -426,14 +434,10 @@
           
         
           
-            <span>
-              <a href="/tags/">Tags</a>
-            </span>
-          
         
           
             
-              <span>MATLAB</span>
+              <span>Omp及其相关算法</span>
             
 
           
@@ -447,7 +451,7 @@
     </button>
 
     <div id="topbar-title">
-      Tag
+      Post
     </div>
 
     <button type="button" id="search-trigger" class="btn btn-link">
@@ -473,27 +477,101 @@
         <div class="row flex-grow-1">
           <main aria-label="Main Content" class="col-12 col-lg-11 col-xl-9 px-md-4">
             
-              
+              <!-- Refactor the HTML structure -->
+
+
+
+<!--
+  In order to allow a wide table to scroll horizontally,
+  we suround the markdown table with `<div class="table-wrapper">` and `</div>`
+-->
+
+
+
+<!--
+  Fixed kramdown code highlight rendering:
+  https://github.com/penibelst/jekyll-compress-html/issues/101
+  https://github.com/penibelst/jekyll-compress-html/issues/71#issuecomment-188144901
+-->
+
+
+
+<!-- Change the icon of checkbox -->
+
+
+
+<!-- Handle images -->
+
+
+
+
+
+<!-- Add header for code snippets -->
+
+
+
+<!-- Create heading anchors -->
+
+
+
+
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+<!-- return -->
+
 
 
 
 <article class="px-1">
-  
+  <header>
+    <div id="waifu">
+  <div id="waifu-message"></div>
+  <div class="waifu-tool">
+    <span class="icon-next"></span>
+    <span class="icon-home"></span>
+    <span class="icon-message"></span>
+    <span class="icon-camera"></span>
+    <span class="icon-volumeup"></span>
+    <span class="icon-volumedown"></span>
+    <span class="icon-about"></span>
+    <span class="icon-cross"></span>
+  </div>
+  <canvas id="live2d2"></canvas>
+  <canvas id="live2d5"></canvas>
+</div>
+<!-- src 中改为你存放的路径 -->
+<script src="/assets/live2djs/dist/live2d_bundle.js"></script>
+<script async type="module" src="/assets/live2djs/waifu-tips.js"></script>
+
+    <h1 data-toc-skip>Omp及其相关算法</h1>
     
 
-
-
-<div id="page-tag">
-  <h1 class="ps-lg-2">
-    <i class="fa fa-tag fa-fw text-muted"></i>
-    MATLAB
-    <span class="lead text-muted ps-2">1</span>
-  </h1>
-  <ul class="content ps-0">
-    
-      <li class="d-flex justify-content-between px-md-3">
-        <a href="/posts/MATLAB/">MATLAB使用心得汇总</a>
-        <span class="dash flex-grow-1"></span>
+    <div class="post-meta text-muted">
+      <!-- published date -->
+      <span>
+        Posted
         <!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
@@ -504,22 +582,152 @@
 
 <time
   
-    class="text-muted small text-nowrap"
-  
-  data-ts="1712712970"
+  data-ts="1746720000"
   data-df="ll"
   
+    data-bs-toggle="tooltip" data-bs-placement="bottom"
+  
 >
-  Apr 10, 2024
+  May  9, 2025
 </time>
 
-      </li>
-    
-  </ul>
+      </span>
+
+      <!-- lastmod date -->
+      
+
+      
+
+      <div class="d-flex justify-content-between">
+        <!-- author(s) -->
+        <span>
+          
+
+          By
+
+          <em>
+            
+              <a href="https://github.com/huang-cumt">XinyuHuang</a>
+            
+          </em>
+        </span>
+
+        <!-- read time -->
+        <!-- Calculate the post's reading time, and display the word count in tooltip -->
+
+
+
+<!-- words per minute -->
+
+
+
+
+
+
+
+
+
+
+<!-- return element -->
+<span
+  class="readtime"
+  data-bs-toggle="tooltip"
+  data-bs-placement="bottom"
+  title="75 words"
+>
+  <em>1 min</em> read</span>
+
+      </div>
+      <!-- .d-flex -->
+    </div>
+    <!-- .post-meta -->
+  </header>
+
+  <div class="content">
+    <p>在现有的稀疏信号重构算法中，常用的有基追踪算法（BP）<sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup>与基于线性规划的$l_1$范数最小化算法。</p>
+
+<p>另一个稀疏恢复算法基于迭代网格搜索，包括正交匹配追踪（OMP）</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1">
+      <p><a href="https://ieeexplore.ieee.org/document/1614066">“Compressed sensing,” IEEE Trans. on Information Theory</a> <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;&#xfe0e;</a></p>
+    </li>
+  </ol>
 </div>
 
-  
+  </div>
+
+  <div class="post-tail-wrapper text-muted">
+    <!-- categories -->
+    
+
+    <!-- tags -->
+    
+
+    <div
+      class="
+        post-tail-bottom
+        d-flex justify-content-between align-items-center mt-5 pb-2
+      "
+    >
+      <div class="license-wrapper">
+        
+          
+
+          This post is licensed under 
+        <a href="https://creativecommons.org/licenses/by/4.0/">
+          CC BY 4.0
+        </a>
+         by the author.
+        
+      </div>
+
+      <!-- Post sharing snippet -->
+
+<div class="share-wrapper d-flex align-items-center">
+  <span class="share-label text-muted">Share</span>
+  <span class="share-icons">
+    
+    
+    
+
+    
+
+      
+
+      <a href="http://service.weibo.com/share/share.php?title=Omp%E5%8F%8A%E5%85%B6%E7%9B%B8%E5%85%B3%E7%AE%97%E6%B3%95%20-%20Fish&url=https%3A%2F%2Fhuang-cumt.github.io%2Fposts%2FOMP%25E5%258F%258A%25E5%2585%25B6%25E7%259B%25B8%25E5%2585%25B3%25E7%25AE%2597%25E6%25B3%2595%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Weibo" aria-label="Weibo">
+        <i class="fa-fw fab fa-weibo"></i>
+      </a>
+    
+
+      
+
+      <a href="https://www.zhihu.com/" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="zhihu" aria-label="zhihu">
+        <i class="fa-fw fa-brands fa-zhihu"></i>
+      </a>
+    
+
+    <button
+      id="copy-link"
+      aria-label="Copy link"
+      class="btn small"
+      data-bs-toggle="tooltip"
+      data-bs-placement="top"
+      title="Copy link"
+      data-title-succeed="Link copied successfully!"
+    >
+      <i class="fa-fw fas fa-link pe-none fs-6"></i>
+    </button>
+  </span>
+</div>
+
+    </div>
+    <!-- .post-tail-bottom -->
+  </div>
+  <!-- div.post-tail-wrapper -->
 </article>
+
 
             
           </main>
@@ -945,12 +1153,86 @@
             </div>
 
             
+              
+              
+
+
+
+
+            
           </aside>
         </div>
 
         <div class="row">
           <!-- tail -->
           <div id="tail-wrapper" class="col-12 col-lg-11 col-xl-9 px-md-4">
+            
+              
+              <!-- Recommend the other 3 posts according to the tags and categories of the current post. -->
+
+<!-- The total size of related posts -->
+
+
+<!-- An random integer that bigger than 0 -->
+
+
+<!-- Equals to TAG_SCORE / {max_categories_hierarchy} -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+              
+              <!-- Navigation buttons at the bottom of the post. -->
+
+<nav class="post-navigation d-flex justify-content-between" aria-label="Post Navigation">
+  
+  
+
+  
+    <a
+      href="/posts/%E6%8D%B7%E5%8F%98%E9%A2%91%E7%9B%B8%E5%8F%82%E6%80%9D%E8%80%83/"
+      class="btn btn-outline-primary"
+      aria-label="Older"
+    >
+      <p>关于捷变频雷达相参积累的思考</p>
+    </a>
+  
+
+  
+    <div class="btn btn-outline-primary disabled" aria-label="Newer">
+      <p>-</p>
+    </div>
+  
+</nav>
+
+            
+              
+              <!-- The comments switcher -->
+
+
             
 
             <!-- The Footer -->
@@ -1410,6 +1692,13 @@
 
 
 
+  
+
+  
+    <!-- image lazy-loading & popup & clipboard -->
+    
+  
+
 
 
 
@@ -1459,16 +1748,37 @@
 
   
 
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
 
 
-  <script src="https://cdn.jsdelivr.net/combine/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/dayjs@1.11.11/dayjs.min.js,npm/dayjs@1.11.11/locale/en.min.js,npm/dayjs@1.11.11/plugin/relativeTime.min.js,npm/dayjs@1.11.11/plugin/localizedFormat.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/combine/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.umd.min.js,npm/glightbox@3.3.0/dist/js/glightbox.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.11/dayjs.min.js,npm/dayjs@1.11.11/locale/en.min.js,npm/dayjs@1.11.11/plugin/relativeTime.min.js,npm/dayjs@1.11.11/plugin/localizedFormat.min.js"></script>
 
 
 
 
 
 
-<script src="/assets/js/dist/misc.min.js"></script>
+<script src="/assets/js/dist/post.min.js"></script>
 
 
 
